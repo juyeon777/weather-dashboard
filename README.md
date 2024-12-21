@@ -1,15 +1,14 @@
-# Subway Congestion Dashboard
-Python 기반의 서울시 지하철 혼잡도 실시간 시각화 프로젝트입니다.
+# 실시간 환율 대시보드
+
+이 프로젝트는 **ExchangeRate-API**를 활용하여 실시간 환율 데이터를 수집하고, 시각화하여 대시보드로 제공하는 Python 기반 애플리케이션입니다. 무료 API 플랜을 사용하며, USD(미국 달러)에서 KRW(한국 원화)로 변환되는 실시간 환율을 시각화합니다.
+
+---
 
 ## 주요 기능
-- 서울시 공공 데이터 포털 API에서 실시간 데이터 수집
-- 시간대별 승차/하차 인원을 시각화
-- 주기적으로 데이터를 갱신하여 실시간처럼 보이는 대시보드 제공
-
-## 설치 및 실행 방법
-1. 리포지토리를 클론합니다:
-   git clone https://github.com/your-repo-name.git
-2. 필요한 패키지를 설치합니다:
-   pip install -r requirements.txt
-3. `main.py` 파일을 실행합니다:
-   python main.py
+1. **환율 데이터 수집**:
+   - ExchangeRate-API를 사용하여 USD → KRW 환율 데이터를 수집.
+   - 수집된 데이터를 `data/exchange_rate.csv`에 저장.
+2. **환율 데이터 시각화**:
+   - `matplotlib`를 활용하여 시간대별 USD → KRW 환율 변화를 실시간으로 그래프에 표시.
+3. **자동 업데이트**:
+   - 5분마다 환율 데이터를 갱신하고, 그래프를 자동으로 업데이트.
