@@ -13,15 +13,15 @@ def fetch_weather_data(api_key, city, output_file):
 
     # API URL for current weather data
     BASE_URL = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
-    print(f"API 요청 URL: {BASE_URL}")
+    print(f"[{city}] API 요청 URL: {BASE_URL}")
 
     try:
         response = requests.get(BASE_URL)
-        print(f"API 응답 상태 코드: {response.status_code}")
+        print(f"[{city}] API 응답 상태 코드: {response.status_code}")
 
         if response.status_code == 200:
             data = response.json()
-            print(f"API 응답 데이터: {data}")
+            print(f"[{city}] API 응답 데이터: {data}")
 
             # Extract weather data
             temperature = data["main"]["temp"]
@@ -33,14 +33,13 @@ def fetch_weather_data(api_key, city, output_file):
             weather_data = {
                 "timestamp": [timestamp],
                 "temperature": [temperature],
-                "humidity": [humidity],
+                "humidity": [humidity], #습도
                 "wind_speed": [wind_speed],
             }
             df = pd.DataFrame(weather_data)
             df.to_csv(output_file, mode="a", index=False, header=False)
-            print(f"날씨 데이터 저장 완료: {city}")
+            print(f"[{city}] 날씨 데이터 저장 완료.")
         else:
-            print(f"API 요청 실패. 상태 코드: {response.status_code}")
-            print(f"응답 내용: {response.text}")
+            print(f"[{city}] API 요청 실패. 상태 코드:", response.status_code)
     except Exception as e:
-        print(f"오류 발생: {e}")
+        print(f"[{city}] 오류 발생: {e}")
