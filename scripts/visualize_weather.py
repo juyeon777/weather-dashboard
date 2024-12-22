@@ -3,9 +3,7 @@ import matplotlib.pyplot as plt
 from matplotlib.dates import DateFormatter
 from matplotlib import rc
 
-# 한글 폰트 설정
-rc('font', family='Malgun Gothic')
-
+rc('font', family='DejaVu Sans')  # CloudShell에서 사용 가능한 기본 폰트
 # 인터랙티브 모드 활성화
 plt.ion()
 
