@@ -45,6 +45,8 @@ pip install -r requirements.txt
 `
     API_KEY = "your_api_key"
 
+`
+`
     CITIES = ["Seoul", "Jeonju"]
 `
 
