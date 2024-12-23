@@ -25,7 +25,6 @@ API 키와 도시 이름을 설정하여 원하는 지역의 데이터를 수집
 
 + Python 3.8 이상 설치 확인.
 + 필수 라이브러리 설치:
-
 `
 pip install -r requirements.txt
 `
@@ -43,9 +42,11 @@ pip install -r requirements.txt
 + OpenWeatherMap API 키를 발급받아 스크립트에 추가합니다.
 + main.py에서 API 키 및 도시 이름 설정:
 
+
     API_KEY = "your_api_key"
 
     CITIES = ["Seoul", "Jeonju"]
+
 
 **4. 프로젝트 실행**
 
