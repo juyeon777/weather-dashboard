@@ -23,17 +23,18 @@ API 키와 도시 이름을 설정하여 원하는 지역의 데이터를 수집
 
 **1. 환경 설정**
 
-Python 3.8 이상 설치 확인.
-필수 라이브러리 설치:
++ Python 3.8 이상 설치 확인.
++ 필수 라이브러리 설치:
 
-pip install -r requirements.txt
+    * pip install -r requirements.txt
 
 **2. AWS 설정**
 
-S3 버킷 생성: 수집된 데이터를 저장할 버킷 이름을 설정합니다.
-CloudWatch 로그 그룹 및 스트림 생성:
-로그 그룹 이름 예시: weather-data-logs
-로그 스트림 이름 예시: weather-stream-seoul, weather-stream-jeonju.
++ S3 버킷 생성:
+    수집된 데이터를 저장할 버킷 이름을 설정합니다.
++ CloudWatch 로그 그룹 및 스트림 생성:
+    로그 그룹 이름 예시: weather-data-logs
+    로그 스트림 이름 예시: weather-stream-seoul, weather-stream-jeonju.
 
 **3. API 키 설정**
 
