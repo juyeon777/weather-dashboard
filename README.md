@@ -25,9 +25,9 @@ API 키와 도시 이름을 설정하여 원하는 지역의 데이터를 수집
 
 + Python 3.8 이상 설치 확인.
 + 필수 라이브러리 설치:
-
+`
     pip install -r requirements.txt
-
+`
 
 **2. AWS 설정**
 
