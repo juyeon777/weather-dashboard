@@ -57,7 +57,6 @@ pip install -r requirements.txt
 
 `
     # 압축 파일 업로드 후 실행
-
     unzip weather-dashboard.zip
 
     cd weather-dashboard/
@@ -66,11 +65,11 @@ pip install -r requirements.txt
 3. 의존성 설치 및 실행
     + CloudShell에서 python 환경을 설정하고 프로젝트를 실행:
 
-`
+
     pip install -r requirements.txt
-    
+
     python main.py
-`
+
 
 4. 결과 확인
     + S3 버킷: 업로드된 데이터를 확인.
