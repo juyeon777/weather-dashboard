@@ -57,7 +57,9 @@ pip install -r requirements.txt
 
 `
     # 압축 파일 업로드 후 실행
+
     unzip weather-dashboard.zip
+
     cd weather-dashboard/
 `
 
@@ -66,6 +68,7 @@ pip install -r requirements.txt
 
 `
     pip install -r requirements.txt
+    
     python main.py
 `
 
