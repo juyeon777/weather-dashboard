@@ -42,11 +42,11 @@ pip install -r requirements.txt
 + OpenWeatherMap API 키를 발급받아 스크립트에 추가합니다.
 + main.py에서 API 키 및 도시 이름 설정:
 
-
+`
     API_KEY = "your_api_key"
 
     CITIES = ["Seoul", "Jeonju"]
-
+`
 
 **4. 프로젝트 실행**
 
