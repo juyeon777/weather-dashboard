@@ -16,3 +16,21 @@ OpenWeatherMap API를 사용하여 특정 도시의 실시간 날씨 데이터�
 
 API 키와 도시 이름을 설정하여 원하는 지역의 데이터를 수집할 수 있습니다.
 
+--
+## 📁 프로젝트 구조
+
+```plaintext
+weather-dashboard/
+├── data/                                # 날씨 데이터를 저장하는 디렉토리
+│   ├── weather_seoul.csv                # 서울 날씨 데이터 파일
+│   ├── weather_jeonju.csv               # 전주 날씨 데이터 파일
+│
+├── scripts/                             # 프로젝트에 사용되는 스크립트 모음
+│   ├── aws_utils.py                     # AWS S3 업로드 및 CloudWatch 로그 작성 함수
+│   ├── fetch_weather_data.py            # 날씨 데이터 수집 스크립트
+│   ├── visualize_weather.py             # 데이터를 시각화하는 스크립트
+│
+├── .gitignore                           # Git에 포함하지 않을 파일/폴더 설정
+├── main.py                              # 프로젝트의 메인 실행 파일
+├── README.md                            # 프로젝트 설명 및 실행 방법 안내
+├── requirements.txt                     # Python 패키지 의존성 정보
